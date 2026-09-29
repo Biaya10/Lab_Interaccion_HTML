@@ -1,0 +1,47 @@
+<!--1. Haz que "¡VEN A BURGER TOWN!" sea una alerta en la que se pueda hacer clic y que diga "ES LA HORA DE LA HAMBURGUESA".
+   - Asegúrate de usar el atributo OnClick para esta parte. --->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Burger Town</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>¡Burger Town!</h1>
+
+  <p>¡Bienvenido a Burger Town! ¡Nos encantan las HAMBURGUESAS!</p>
+  <br>
+  <p>No es solo un sándwich, ¡es una HAMBURGUESA!</p>
+
+  <h2><button class="heading-action" onclick="console.log('¡Alguien hizo clic en BURGER TOWN!')">¡Burger Town!</button></h2>
+
+  <h2 id="burger-heading">¡Una foto de una HAMBURGUESA!</h2>
+  <img
+  src="./Burger4.svg"
+  alt="Hamburguesa con queso, lechuga y tomate">
+
+  <p>¡Aquí hay una lista de HAMBURGUESAS!</p>
+  <ul>
+    <li>¡HAMBURGUESA!</li>
+    <li>¡HAMBURGUESAS!</li>
+    <li>¡HAMBURGUESAS!</li>
+    <li>¡HAMBURGUESA con <button class="rice" onclick="changeHeadingColor()">ARROZ</button>!</li>
+    <li>¡HAMBURGUESAS con MÁS <button class="rice" onclick="changeHeadingColor()">ARROZ</button>!</li>
+    <li>¡HAMBURGUESAS con Queso y <button class="rice" onclick="changeHeadingColor()">ARROZ</button>!</li>
+    <li>¡HAMBURGUESAS pero solo <button class="rice" onclick="changeHeadingColor()">ARROZ</button>!</li>
+  </ul>
+
+  <h2>¡Burger Town!</h2>
+  
+  <h3><button class="heading-action" onclick="alert('ES LA HORA DE LA HAMBURGUESA')">¡VEN A BURGER TOWN!</button></h3>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
